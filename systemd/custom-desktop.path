@@ -1,0 +1,16 @@
+# Re-apply ~/.config/custom-desktop after a Ryoku update rewrites these folders.
+# Installed by ~/Scripts/restore-config.sh.
+[Unit]
+Description=Watch Ryoku-managed folders for update rewrites
+
+[Path]
+PathChanged=%h/.config/quickshell/shell/modules/notifications
+PathChanged=%h/.config/quickshell/inir/modules/iris/sidebar
+PathChanged=%h/.config/quickshell/shell/modules/desktop/notes
+PathChanged=%h/.config/quickshell/shell/modules/osd
+PathChanged=%h/.config/quickshell/inir/services
+PathChanged=%h/.config/quickshell/inir/modules/iris/bar
+Unit=custom-desktop.service
+
+[Install]
+WantedBy=default.target

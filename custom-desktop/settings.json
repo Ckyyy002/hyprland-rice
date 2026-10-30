@@ -1,0 +1,9 @@
+{
+  "_about": "Settings restored by apply.sh only when they are back at Ryoku's default (after a reset). Changing them in Settings is respected. Each entry: path, value (yours), default (Ryoku's).",
+  "settings": [
+    { "path": "inir.sounds.timer", "value": true, "default": false },
+    { "path": "inir.sounds.events.timerDone", "value": "~/.local/share/sounds/custom/timer-gong.ogg", "default": "" },
+    { "path": "inir.iris.bubbles.extras.tools", "value": { "enable": true, "fx": 0.25, "fy": 0.0388, "place": "edge:top" }, "default": null, "check": "enable" },
+    { "path": "inir.iris.bar.trailing", "value": "network", "default": "controls" }
+  ]
+}

@@ -1,0 +1,9 @@
+# Started by custom-desktop.path. Waits for the update to finish writing, then
+# re-applies the customizations (idempotent: does nothing if all is in place).
+[Unit]
+Description=Re-apply custom desktop tweaks after a Ryoku update
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/sleep 15
+ExecStart=%h/.config/custom-desktop/apply.sh
