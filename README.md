@@ -5,6 +5,7 @@
 **A calm, glassy Hyprland desktop on Ryoku Linux — with a living top-bar Island, floating bubbles, and tweaks that survive every update.**
 
 ![Hyprland](https://img.shields.io/badge/Hyprland-0.57-58E1FF?style=for-the-badge&logo=hyprland&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.1-C9A227?style=for-the-badge)
 ![Ryoku](https://img.shields.io/badge/Ryoku-Amaterasu%201.0.6-0F2A4A?style=for-the-badge)
 ![Quickshell](https://img.shields.io/badge/Quickshell-QML-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Arch](https://img.shields.io/badge/CachyOS-Arch-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
@@ -93,6 +94,10 @@ flowchart LR
 | `toolsclock.py` | `IrisTools.qml` | Timers card shows time left, pause and stop |
 | `notestyping.py` | `Desktop.qml` | Notes announce typing like other text fields |
 | `irisbar.py` | `IrisBar.qml` | Bars lift above the desktop while a widget is typing |
+| `notesblur.py` | `NotesWidget.qml` | Light wallpaper blur behind the notes pad (`BLUR`, 0–1) |
+| `notesglass.py` | `Desktop.qml` | Hands the notes pad the wallpaper copy it blurs |
+| `weekstart.py` | `CalendarWidget.qml`, `IrisSidebarSection.qml`, `IrisAgendaFace.qml` | Weeks start on Monday (`FIRST_DAY`) |
+| `wsdots.py` | `IrisBubbleFace.qml` | Workspace dots in number order, not creation order |
 
 </details>
 
@@ -109,9 +114,28 @@ cd hyprland-rice
 ./install.sh
 ```
 
+For a specific version, clone its branch instead, e.g. `git clone -b v1.0 https://github.com/Ckyyy002/hyprland-rice`.
+
+To show the workspace number in the Island (a setting, so `install.sh` leaves it to you):
+
+```bash
+qs -c shell ipc call iris barPiece workspaces on
+```
+
 `install.sh` backs up anything it replaces to `~/.local/state/hyprland-rice-backup-<date>/`, copies the files into place, downloads the timer gong (needs `yt-dlp` + `ffmpeg`), installs the update watcher and applies everything.
 
 Then pick the bits that live in Ryoku's GUI: the **Cluster** Island, bubble positions and the wallpaper are set in **Settings → Bar** and Island edit mode.
+
+---
+
+## ✦ Versions
+
+Each version lives on its own branch; `main` follows the newest.
+
+| Branch | What's new |
+|---|---|
+| [`v1.1`](https://github.com/Ckyyy002/hyprland-rice/tree/v1.1) | Monday-first calendars · softly blurred notes pad · workspace number in the Island with dots in the right order · update watcher covers the new patched folders |
+| [`v1.0`](https://github.com/Ckyyy002/hyprland-rice/tree/v1.0) | First release: Island bar tweaks, Timers bubble, lock screen, update-proof patches |
 
 ---
 
