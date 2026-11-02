@@ -6,7 +6,7 @@
 
 ![Hyprland](https://img.shields.io/badge/Hyprland-0.57-58E1FF?style=for-the-badge&logo=hyprland&logoColor=white)
 ![Version](https://img.shields.io/badge/version-1.1-C9A227?style=for-the-badge)
-![Ryoku](https://img.shields.io/badge/Ryoku-Amaterasu%201.0.6-0F2A4A?style=for-the-badge)
+![Ryoku](https://img.shields.io/badge/Ryoku-Amaterasu%201.0.7-0F2A4A?style=for-the-badge)
 ![Quickshell](https://img.shields.io/badge/Quickshell-QML-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Arch](https://img.shields.io/badge/CachyOS-Arch-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
 
@@ -169,7 +169,7 @@ hyprland-rice/
 
 <div align="center">
 
-**System** · CachyOS kernel · Hyprland 0.57 · Ryoku Amaterasu 1.0.6 · Quickshell · kitty · fish
+**System** · CachyOS kernel · Hyprland 0.57 · Ryoku Amaterasu 1.0.7 · Quickshell · kitty · fish
 
 Built on the wonderful [**Ryoku**](https://github.com/Ryoku-dev/ryoku) desktop, the [**iNiR**](https://github.com/snowarch/inir) shell behind its *iris* bar, and [**qylock**](https://github.com/Darkkal44/qylock) lock screens — all credit for the base goes to their authors.
 
