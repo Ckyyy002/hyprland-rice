@@ -10,7 +10,7 @@
 ![Quickshell](https://img.shields.io/badge/Quickshell-QML-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Arch](https://img.shields.io/badge/CachyOS-Arch-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
 
-<img src="screenshots/desktop.jpg" alt="The desktop: notched top bar with the workspace number, a Monday-first calendar and a frosted notes pad over a black-hole wallpaper" width="100%">
+<img src="screenshots/v1.1/desktop.jpg" alt="The desktop: notched top bar with the workspace number, a Monday-first calendar and a frosted notes pad over a black-hole wallpaper" width="100%">
 
 <sub>Personal calendar events and notes are blurred in these screenshots.</sub>
 
@@ -22,16 +22,16 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="screenshots/island-media.jpg" alt="Island open on the media page"></td>
-    <td width="50%"><img src="screenshots/control-center.jpg" alt="Control Center dropping out of the Island"></td>
+    <td width="50%"><img src="screenshots/v1.1/island-media.jpg" alt="Island open on the media page"></td>
+    <td width="50%"><img src="screenshots/v1.1/control-center.jpg" alt="Control Center dropping out of the Island"></td>
   </tr>
   <tr>
     <td align="center"><b>The Island — Now Playing</b><br><sub>Click the notch and it morphs into a player with an equalizer.</sub></td>
     <td align="center"><b>Control Center</b><br><sub>Toggles, sliders and notifications fall straight out of the bar.</sub></td>
   </tr>
   <tr>
-    <td width="50%"><img src="screenshots/island-desktop.jpg" alt="Island open on the desktop page with weather and system vitals"></td>
-    <td width="50%"><img src="screenshots/terminal.jpg" alt="kitty running fastfetch"></td>
+    <td width="50%"><img src="screenshots/v1.1/island-desktop.jpg" alt="Island open on the desktop page with weather and system vitals"></td>
+    <td width="50%"><img src="screenshots/v1.1/terminal.jpg" alt="kitty running fastfetch"></td>
   </tr>
   <tr>
     <td align="center"><b>Desktop page</b><br><sub>Clock, weather, session and live CPU / memory / heat / disk.</sub></td>
