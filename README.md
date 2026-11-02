@@ -10,7 +10,7 @@
 ![Quickshell](https://img.shields.io/badge/Quickshell-QML-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Arch](https://img.shields.io/badge/CachyOS-Arch-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
 
-<img src="screenshots/desktop.jpg" alt="The desktop: notched top bar, calendar and notes widgets over a painted sky" width="100%">
+<img src="screenshots/desktop.jpg" alt="The desktop: notched top bar with the workspace number, a Monday-first calendar and a frosted notes pad over a black-hole wallpaper" width="100%">
 
 <sub>Personal calendar events and notes are blurred in these screenshots.</sub>
 
