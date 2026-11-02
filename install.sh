@@ -34,5 +34,15 @@ fi
 # Installs the update watcher, applies every patch, restarts the lock overlay, reloads Hyprland.
 bash "$HOME/Scripts/restore-config.sh"
 
+# Workspace number in the Island: a shell setting, not a patch. The shell was just
+# reloaded, so give it a few seconds to answer. Safe to repeat ("on" keeps it on).
+ws=""
+for _ in $(seq 20); do
+    ws=$(qs -c shell ipc call iris barPiece workspaces on 2>/dev/null) && [ "$ws" = on ] && break
+    sleep 1
+done
+[ "$ws" = on ] && echo "Workspace number: on" \
+    || echo "Could not turn on the workspace number; run: qs -c shell ipc call iris barPiece workspaces on"
+
 [ -d "$backup" ] && echo "Your previous files are in $backup"
 echo "Done."
