@@ -148,16 +148,18 @@ settings() {
 }
 
 notif
-forked_patch calendar inir/modules/iris/sidebar/IrisSidebarSection.qml calendar.py
-forked_patch notes    shell/modules/desktop/notes/NotesWidget.qml       notes.py
+forked_patch calendar inir/modules/iris/sidebar/IrisSidebarSection.qml calendar.py weekstart.py
+forked_patch notes    shell/modules/desktop/notes/NotesWidget.qml       notes.py notesblur.py
 forked_patch osd      shell/modules/osd/OsdWindow.qml                   osd.py
 forked_patch dnd      inir/services/Notifications.qml                   dnd.py
 forked_patch island   inir/modules/iris/bar/IrisIsland.qml             btleft.py timerisland.py islandrest.py
 forked_patch stage    inir/modules/iris/stage/IrisStage.qml            timerstage.py
-forked_patch face     inir/modules/iris/components/IrisBubbleFace.qml  timerring.py
+forked_patch face     inir/modules/iris/components/IrisBubbleFace.qml  timerring.py wsdots.py
 forked_patch tools    inir/modules/iris/bar/IrisTools.qml              toolsclock.py
-forked_patch desktop  shell/modules/desktop/Desktop.qml                notestyping.py
+forked_patch desktop  shell/modules/desktop/Desktop.qml                notestyping.py notesglass.py
 forked_patch irisbar  inir/modules/iris/bar/IrisBar.qml                irisbar.py
+forked_patch deskcal  shell/modules/desktop/calendar/CalendarWidget.qml weekstart.py
+forked_patch agenda   inir/modules/iris/widgets/IrisAgendaFace.qml     weekstart.py
 theme
 settings
 

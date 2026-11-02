@@ -48,7 +48,9 @@
 | **Floating bubbles** | Music (top-left), a **Timers bubble** that appears only while a timer runs, tray, and battery — each placed by hand. |
 | **Timers that make sense** | The timer gets its own bubble with a filling progress ring instead of stealing the music bubble; clicking it shows time left with pause / stop. A gong rings when it's done. |
 | **One-click Wi-Fi** | The Wi-Fi bubble opens the list of nearby networks, not the whole Control Center. |
-| **Desktop widgets** | Calendar with events, a big clock, and a notes pad — typing in it no longer hides the bars. |
+| **Desktop widgets** | Calendar with events, a big clock, and a notes pad on a softly blurred backdrop — typing in it no longer hides the bars. |
+| **Workspace number** | The current workspace number in the Island, with dots in workspace order (`qs -c shell ipc call iris barPiece workspaces on`). |
+| **Monday weeks** | Every calendar (desktop widget, side panel, week strip) starts on Monday. |
 | **Lock screen** | The *r1999-2* [qylock](https://github.com/Darkkal44/qylock) theme with a rising curtain on <kbd>Super</kbd>+<kbd>L</kbd>, a gold shine and circle reveal on unlock, and running timers shown under the clock. |
 | **Quieter OSD** | Volume and brightness show in the Island only (no second box at the bottom), without swallowing nearby bubbles. |
 | **Update-proof** | Every tweak is re-applied automatically after a Ryoku update — see below. |

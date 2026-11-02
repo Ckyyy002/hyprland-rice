@@ -68,3 +68,11 @@ Settings and files (apply.sh `settings`, restore_settings.py):
   right of the clock). Change one in Settings and it is respected.
   To pin another setting, add an entry with its path, your value, and Ryoku's default.
 - sounds/timer-gong.ogg: backup of the ringtone, copied back if it goes missing.
+
+## Week start, notes blur, workspace number (2026-11-02)
+- weekstart.py: calendars start on Monday (desktop calendar widget, iris right-panel
+  calendar, iris "upcoming" week strip). FIRST_DAY at the top (0 = Sunday).
+- notesblur.py + notesglass.py: a light blur of the wallpaper behind the desktop notes
+  pad. BLUR at the top of notesblur.py (0..1). Off when Performance disables blur.
+- Workspace number in the island: a setting, not a patch
+  (`qs -c shell ipc call iris barPiece workspaces on|off`).

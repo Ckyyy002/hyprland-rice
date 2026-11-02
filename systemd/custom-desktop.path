@@ -10,6 +10,9 @@ PathChanged=%h/.config/quickshell/shell/modules/desktop/notes
 PathChanged=%h/.config/quickshell/shell/modules/osd
 PathChanged=%h/.config/quickshell/inir/services
 PathChanged=%h/.config/quickshell/inir/modules/iris/bar
+PathChanged=%h/.config/quickshell/shell/modules/desktop/calendar
+PathChanged=%h/.config/quickshell/inir/modules/iris/widgets
+PathChanged=%h/.config/quickshell/inir/modules/iris/components
 Unit=custom-desktop.service
 
 [Install]
