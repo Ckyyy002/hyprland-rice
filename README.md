@@ -37,6 +37,14 @@
     <td align="center"><b>Desktop page</b><br><sub>Clock, weather, session and live CPU / memory / heat / disk.</sub></td>
     <td align="center"><b>kitty + fastfetch</b><br><sub>Framed windows inside the rounded screen border.</sub></td>
   </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/v1.2/lock-screen.jpg" alt="The r1999-2 lock screen with the clock and START prompt"></td>
+    <td width="50%"><img src="screenshots/v1.2/lock-osd.jpg" alt="Lock screen with the brightness island on the left and the volume island on the right"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Lock screen</b><br><sub><i>Reverse: 1999</i> theme with a live video background. Press <kbd>Space</kbd> or <kbd>Enter</kbd> to start.</sub></td>
+    <td align="center"><b>Lock screen islands</b><br><sub>Brightness springs out on the left, volume on the right.</sub></td>
+  </tr>
 </table>
 
 ---
