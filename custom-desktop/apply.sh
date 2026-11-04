@@ -119,7 +119,8 @@ theme() {
     if [ -f "$live/QsTimer.qml" ] && grep -q 'QsReveal.qml' "$live/Main.qml" 2>/dev/null; then
         # Our edits are still there: the live theme is the newest, so the
         # backup follows it (your own later edits are kept, never reverted).
-        for f in Main.qml QsReveal.qml QsTimer.qml; do
+        for f in Main.qml QsReveal.qml QsTimer.qml QsOsd.qml; do
+            [ -f "$live/$f" ] || continue
             if ! cmp -s "$live/$f" "$backup/$f"; then
                 cp "$live/$f" "$backup/$f"
                 log "theme: backed up your edited $f"
@@ -127,7 +128,9 @@ theme() {
         done
     else
         # Theme was reinstalled (our files gone): put them back.
-        for f in Main.qml QsReveal.qml QsTimer.qml; do cp "$backup/$f" "$live/$f"; done
+        for f in Main.qml QsReveal.qml QsTimer.qml QsOsd.qml; do
+            [ -f "$backup/$f" ] && cp "$backup/$f" "$live/$f"
+        done
         log "theme: restored your r1999-2 lock screen files"
     fi
     return 0

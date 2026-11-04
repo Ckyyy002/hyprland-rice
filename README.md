@@ -5,7 +5,7 @@
 **A calm, glassy Hyprland desktop on Ryoku Linux — with a living top-bar Island, floating bubbles, and tweaks that survive every update.**
 
 ![Hyprland](https://img.shields.io/badge/Hyprland-0.57-58E1FF?style=for-the-badge&logo=hyprland&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.1-C9A227?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.2-C9A227?style=for-the-badge)
 ![Ryoku](https://img.shields.io/badge/Ryoku-Amaterasu%201.0.7-0F2A4A?style=for-the-badge)
 ![Quickshell](https://img.shields.io/badge/Quickshell-QML-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Arch](https://img.shields.io/badge/CachyOS-Arch-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
@@ -52,7 +52,9 @@
 | **Desktop widgets** | Calendar with events, a big clock, and a notes pad on a softly blurred backdrop — typing in it no longer hides the bars. |
 | **Workspace number** | The current workspace number in the Island, with dots in workspace order. |
 | **Monday weeks** | Every calendar (desktop widget, side panel, week strip) starts on Monday. |
-| **Lock screen** | The *r1999-2* [qylock](https://github.com/Darkkal44/qylock) theme with a rising curtain on <kbd>Super</kbd>+<kbd>L</kbd>, a gold shine and circle reveal on unlock, and running timers shown under the clock. |
+| **Lock screen** | The *r1999-2* [qylock](https://github.com/Darkkal44/qylock) theme with a rising curtain on <kbd>Super</kbd>+<kbd>L</kbd>, a gold shine and circle reveal on unlock, running timers shown under the clock, and <kbd>Space</kbd> opens the password field just like <kbd>Enter</kbd>. |
+| **Lock screen OSD** | Volume and brightness while locked: two black-and-gold dynamic-island capsules that spring out of a dot, brightness on the left, volume on the right. |
+| **Power menu** | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> opens the session menu: power off, reboot, log out, suspend. |
 | **Quieter OSD** | Volume and brightness show in the Island only (no second box at the bottom), without swallowing nearby bubbles. |
 | **Update-proof** | Every tweak is re-applied automatically after a Ryoku update — see below. |
 
@@ -130,6 +132,7 @@ Each version lives on its own branch; `main` follows the newest.
 
 | Branch | What's new |
 |---|---|
+| [`v1.2`](https://github.com/Ckyyy002/hyprland-rice/tree/v1.2) | Volume / brightness islands on the lock screen · <kbd>Space</kbd> opens the lock's password field · <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> power menu |
 | [`v1.1`](https://github.com/Ckyyy002/hyprland-rice/tree/v1.1) | Monday-first calendars · softly blurred notes pad · workspace number in the Island with dots in the right order · update watcher covers the new patched folders |
 | [`v1.0`](https://github.com/Ckyyy002/hyprland-rice/tree/v1.0) | First release: Island bar tweaks, Timers bubble, lock screen, update-proof patches |
 
@@ -143,6 +146,7 @@ Each version lives on its own branch; `main` follows the newest.
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> | Suspend |
 | <kbd>Super</kbd> + <kbd>Esc</kbd> | Control Center |
 | <kbd>Super</kbd> + <kbd>N</kbd> | Left (focus) panel |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Power / session menu |
 | Brightness keys | Level shown in the Island |
 
 ---

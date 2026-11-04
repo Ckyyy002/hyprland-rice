@@ -414,6 +414,16 @@ Item {
     // Only under the Quickshell lock; a real SDDM greeter has no such overlay.
     // sddm.hostName is set under the Ryoku lock too, so key on the shim-only
     // fingerprintHint instead of isQuickshell.
+    // Volume (right) / brightness (left) islands while locked.
+    Loader {
+        id: osdRunner
+        active: typeof sddm !== "undefined" && sddm.fingerprintHint === true
+        source: "QsOsd.qml"
+        z: 1000
+        anchors.fill: parent
+        onLoaded: { item.s = root.s; item.fg = root.fg; item.gold = root.gold; item.fontName = titleFont.name }
+    }
+
     Loader { id: revealRunner; active: typeof sddm !== "undefined" && sddm.fingerprintHint === true; source: "QsReveal.qml" }
     function reveal(verb) {
         if (revealRunner.item) revealRunner.item.run(verb)
@@ -462,6 +472,6 @@ Item {
     focus: true
     Keys.onReturnPressed: (event) => { if (!root.interactionMode) { startInteraction(); event.accepted = true } }
     Keys.onEnterPressed: (event) => { if (!root.interactionMode) { startInteraction(); event.accepted = true } }
-    Keys.onPressed: (event) => { if (!root.interactionMode) { if (event.text.length > 0 && event.text[0].match(/[a-z0-9]/i)) { startInteraction(); event.accepted = true } } }
+    Keys.onPressed: (event) => { if (!root.interactionMode) { if (event.key === Qt.Key_Space) { startInteraction(); event.accepted = true; return } if (event.text.length > 0 && event.text[0].match(/[a-z0-9]/i)) { startInteraction(); event.accepted = true } } }
     Component.onCompleted: { keyboard.numLock = true; enterAnim.start() }
 }

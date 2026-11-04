@@ -47,3 +47,6 @@ hl.window_rule({
     match = { class = "org.gnome.Nautilus" },
     tile  = true,
 })
+
+-- Ctrl+Alt+P: the iris session menu (power off, reboot, logout, suspend, lock).
+hl.bind("CTRL + ALT + P", hl.dsp.exec_cmd("qs -c shell ipc call globalActions run open-session"))

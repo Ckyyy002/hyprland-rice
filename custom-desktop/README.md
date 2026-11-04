@@ -76,3 +76,8 @@ Settings and files (apply.sh `settings`, restore_settings.py):
   pad. BLUR at the top of notesblur.py (0..1). Off when Performance disables blur.
 - Workspace number in the island: a setting, not a patch
   (`qs -c shell ipc call iris barPiece workspaces on|off`).
+
+## Lock screen OSD, Space key, power menu (2026-11-04)
+- qylock/r1999-2/QsOsd.qml: lock screen volume (right edge) / brightness (left edge) islands that spring open on change.
+- Main.qml: Space on the lock's start screen opens the password field, like Enter.
+- Ctrl+Alt+P (hypr/user.lua): opens the iris session menu (power off, reboot, logout, suspend).
